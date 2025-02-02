@@ -8,11 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Rating {
-	
+
 	private String rattingId;
 	private String userId;
 	private String hotelId;
 	private int rating;
 	private String feedback;
+	private Hotel hotel;
 
 }
