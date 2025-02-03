@@ -56,6 +56,27 @@ public class UserServiceImp implements UserService {
 		List<Rating> ratingList = ratings.stream().map(rating -> {
 			Hotel hotel = hotelService.getHotel(rating.getHotelId());
 			rating.setHotel(hotel);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			// return the rating
 			return rating;
 		}).collect(Collectors.toList());
