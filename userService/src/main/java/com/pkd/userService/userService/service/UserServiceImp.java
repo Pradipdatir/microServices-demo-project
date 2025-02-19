@@ -52,31 +52,10 @@ public class UserServiceImp implements UserService {
 				Rating[].class);
 		logger.info("{} ", ratingsOfUser);
 		List<Rating> ratings = Arrays.stream(ratingsOfUser).toList();
-
 		List<Rating> ratingList = ratings.stream().map(rating -> {
 			Hotel hotel = hotelService.getHotel(rating.getHotelId());
 			rating.setHotel(hotel);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	
 			// return the rating
 			return rating;
 		}).collect(Collectors.toList());
